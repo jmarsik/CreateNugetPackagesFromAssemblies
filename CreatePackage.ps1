@@ -2,10 +2,7 @@
 param (
     [parameter(Mandatory=$true)]
     [string]
-    $Path,
-  
-    [string]
-    $Destination
+    $Path
 )
 
 $tool= "e:\tools\NuGet.exe"
