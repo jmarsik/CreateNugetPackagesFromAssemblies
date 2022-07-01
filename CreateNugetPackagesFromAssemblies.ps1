@@ -1,14 +1,13 @@
 #requires -version 2.0
 param(
-    [Parameter(Mandatory=$true)]
     [string]
-    $Path,
+    $Path = '.\',
 
     [string]
-    $NameStartsWith = 'Microsoft.TeamFoundation.',
+    $NameStartsWith = '',
 
     [string]
-    $TargetPath = ''
+    $TargetPath = '.\'
 )
 
 # should be in PATH, one can install it for example by using Chocolatey command "choco install NuGet.CommandLine"
